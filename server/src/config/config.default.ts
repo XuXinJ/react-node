@@ -48,7 +48,10 @@ export default (appInfo: EggAppInfo) => {
   }
 
   // 是否使用mysql
-  config.useSql = true
+  config.useSql = false
+
+  // 是否启用更新数据库脚本
+  config.useUmzug = false
 
   config.sequelize = {
     dialect: 'mysql',

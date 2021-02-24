@@ -17,5 +17,5 @@ export function setUser(params: { username: string, age: number }) {
 
 // 修改用户名
 export function fixUsername(params: { id: string, name: string }) {
-  return request.get(`/user/fixUsername`, { data: params })
+  return request.get(`/app/user/fixUsername`, { data: params })
 }
